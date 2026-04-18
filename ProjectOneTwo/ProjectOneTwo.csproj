@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Content\bin\DesktopGL\aApiNyala200.xnb" />
+    <None Remove="Content\bin\DesktopGL\aApiNyala30.xnb" />
+    <None Remove="Content\bin\DesktopGL\aApiNyala50.xnb" />
+    <None Remove="Content\bin\DesktopGL\Arial50.xnb" />
+    <None Remove="Content\bin\DesktopGL\dying.xnb" />
+    <None Remove="Content\bin\DesktopGL\female_scream.xnb" />
+    <None Remove="Content\bin\DesktopGL\footsteps_in_snow.xnb" />
+    <None Remove="Content\bin\DesktopGL\footsteps_in_swon.xnb" />
+    <None Remove="Content\bin\DesktopGL\howling_wind.xnb" />
+    <None Remove="Content\bin\DesktopGL\jump.xnb" />
+    <None Remove="Content\bin\DesktopGL\MadS1.xnb" />
+    <None Remove="Content\bin\DesktopGL\MadS2.xnb" />
+    <None Remove="Content\bin\DesktopGL\Main_Theme.xnb" />
+    <None Remove="Content\bin\DesktopGL\stone.xnb" />
+    <None Remove="Content\bin\DesktopGL\sword_hit.xnb" />
+    <None Remove="Content\bin\DesktopGL\sword_swing.xnb" />
+    <None Remove="Content\bin\DesktopGL\Taisean50.xnb" />
+    <None Remove="Content\bin\DesktopGL\The_Lobby_Music.xnb" />
+    <None Remove="Content\bin\DesktopGL\whoosh.xnb" />
+    <None Remove="Content\obj\DesktopGL\font.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\font2.mgcontent" />
+    <None Remove="Icon.ico" />
+    <None Remove="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+    <EmbeddedResource Include="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Microsoft.Xna.Framework.Content.ContentTypeReader" Visible="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Barrier.cs">
+      <Generator>FCMCommand</Generator>
+      <LastGenOutput>Barrier.dgml</LastGenOutput>
+    </Compile>
+    <Compile Update="Game1.cs">
+      <Generator>FCMCommand</Generator>
+      <LastGenOutput>Game1.dgml</LastGenOutput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Barrier.dgml">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Barrier.cs</DependentUpon>
+    </None>
+    <None Update="Game1.dgml">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Game1.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+</Project>
