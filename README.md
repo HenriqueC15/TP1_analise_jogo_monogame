@@ -33,6 +33,9 @@ public Game1()
 }
 ```
 
+**Alterações que fariamos no codigo:**
+O que alteravamos no jogo é um problema que ele tem é quando o jogador esta no ar e ele realiza um dash para baixo ele não para a animação e continua mesmo quando o jogador morre so parando quando o realiza um ataque. Para isso achamos mais eficiente que fosse alterado para depender do A_timer (timer de ataque), isso garantiria que ao realizar o dash para baixo o A_timer seja iniciado, também seria melhor zerar o A_animator_timer e attack quando o A_timer terminar, fazendo a animação acabar.
+
 **MUuuuhdanças que faziamos em relação ao jogo:**
 1. Diminuiamos o couldown dos ataques como também dividiamos o ataque1 e o ataque2 como ataques diferentes. 
 2. Fariamos com que em vez de ter sprites de direita e esquerda, fariamos que so tivesse sprite de so um lado e usavamos codigo para alterar o lado da sprite.
