@@ -6,20 +6,34 @@ Descrição do Jogo:
 O objetivo é derrotar o outro jogador.
 
 Mecanicas:
+
 Permite a alteração dos controles
+
 O jogador pode andar para a direita e esquerda, dar um dash para todas as direções, pode atacar e dar um ataque que da um dash e empurar o inimigo.
+
 O jogador quando cai perde uma das vidas, e quando perde as 3 vidas é game over.
 
 Analise dos Ficheiros:
 
+São muito bem organizados, separando partes do codigo cada função necessaria para o jogo, como por exemplo tendo um arquivo de codigo so para o ataque outro para o dash e por ai vai mas em contra partida podendo fazer o jogo perder otimização, como também tendo as imagens e soms bem separados, separando as imagens do jogados em diversas pastas como estando parado, correndo e atacando, também tendo as imagens de background, efeitos e universais separados em pastas diferentes, os soms tem duas pastas aonde uma contem as musicas e a outra os efeitos sonoros.<3
 
 Analise do Codigo:
 
 
-Trabalho de Pesquisa feito por:
-34978 Ana Beatriz Barcelar
-34975 Rafaela Campos
-29488 Henrique Correia
+MUuuuhdanças que faziamos em relação ao jogo:
 
+Diminuiamos o couldown dos ataques como também dividiamos o ataque1 e o ataque2 como ataques diferentes.
+
+Fariamos com que em vez de ter sprites de direita e esquerda, fariamos que so tivesse sprite de so um lado e usavamos codigo para alterar o lado da sprite.
+
+Muuuuhdariamos o layout dos controles para convinar mais com a estetica do jogo.
+
+Trabalho de Pesquisa feito por:
+
+34978 Ana Beatriz Barcelar
+
+34975 Rafaela Campos
+
+29488 Henrique Correia
 
 ablubluble
