@@ -42,6 +42,49 @@ public Game1()
 
 Ao analisar o jogo reparamos num bug relativo a uma animação que continuava em loop quando não devia, isto é, ao dar ataque dash para baixo (estando o player no ar) a animação do ataque perssistia, até mesmo se o player morre-se, até este dar um outro ataque. Para isso achamos mais eficiente que fosse alterado para depender do A_timer (timer de ataque), assim garantindo que ao realizar o dash para baixo o A_timer seja iniciado; seria tambem melhor zerar o A_animator_timer e attack quando o A_timer terminar, fazendo a animação acabar.
 
+**Linhas de codigo que alterariamos e como:**
+Linha 172 – 182:
+```
+if (A_timer > 0)
+{
+A_timer -= 1;
+A_wait = (float)A_timer / (float)A_timer_length;
+if (A_timer == 0)
+{
+A_pressed = false;
+A_animation_timer = 1;
+attack = null;
+}
+}
+```
+
+Linha 188 :
+```
+A_timer = 30;
+A_timer_length = A_timer;
+A_pressed = true;
+```
+Linha 241:
+```
+if (A_timer > 0)
+{
+// ...
+}
+```
+Linha 254:
+```
+if (A_animation_timer >= 9) A_animation_timer = 1;
+{
+// ...
+}
+```
+Linha 258:
+```
+else if (!is_in_jump && (state.IsKeyDown(right) || state.IsKeyDown(left)))
+{
+// ...
+}
+```
 
 **Mudanças que faziamos em relação ao jogo:**
 
