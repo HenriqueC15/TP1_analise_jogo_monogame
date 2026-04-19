@@ -18,10 +18,10 @@ Os ficheiros deste jogo são bem divididos e organizados, separando por partes o
 
 **Analise do Codigo:**
 
-Em geral o código deste jogo aparenta ser relativamente simples sendo esta parte a que achamos mais interesssante de mencionar:
+Em geral o código deste jogo aparenta ser relativamente simples, sendo esta parte a que achamos mais interesssante de mencionar:
 
 **Singleton:**
-Nesta linha de código são utilizados os singletons, sendo esta uma forma de facilitar o acesso aos objetos, para os quais existe apenas uma instancia.
+Nesta linha de código são utilizados os singletons, para os quais existe apenas uma instancia, sendo esta uma forma de facilitar o acesso aos objetos.
 Linha (138 screem gameplays):
 ```
 Screen_Settings settings = (Screen_Settings)Game1.self.screenManager.GetScreen(ScreenManager.GameState.Settings);
