@@ -22,7 +22,7 @@ Em geral o código deste jogo aparenta ser relativamente simples, sendo esta par
 
 **Singleton:**
 Nesta linha de código são utilizados os singletons, para os quais existe apenas uma instancia, sendo esta uma forma de facilitar o acesso aos objetos.
-Linha (138 screem gameplays):
+Linha (138 screen gameplays):
 ```
 Screen_Settings settings = (Screen_Settings)Game1.self.screenManager.GetScreen(ScreenManager.GameState.Settings);
 ```
